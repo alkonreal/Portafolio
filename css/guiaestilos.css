@@ -458,6 +458,7 @@ padding: 60px;
 
 .item1{ width: 30%;
     height: 50%;
+    
 
 
 
@@ -471,4 +472,26 @@ padding: 60px;
 .parque{
 
     object-fit: contain;
+    -webkit-box-shadow: -50px -55px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -50px -55px 0px 0px rgba(0,0,0,0.75);
+box-shadow: -50px -55px 0px 0px rgba(0,0,0,0.75);
+    
 }
+
+.quien{font-family: "MontserratBold";
+text-decoration: underline; font-size: 20pt;}
+
+.hola{font-family: "MontserratRegular";
+    font-size: 30pt;}
+
+
+    /* Trabajos */
+
+    .trabajos{display:flex;justify-content:center; flex-direction: column; align-items: center;}
+
+    .mistrabajos{ font-family: "MontserratBold"; font-size: 30pt;}
+    
+    
+    
+
+    .awesome{ font-family: 'montserratRegular'; font-size: 20pt;}
