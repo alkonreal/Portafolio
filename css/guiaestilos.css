@@ -273,11 +273,14 @@ img {
 }
 
 .content {
+
+    /* Cuando este acabada la web, tambien debemos quitar este padding */
     padding: 40px;
+    /*  */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /*  Luego debemos quitar este gap */
-    gap: 20px;
+    /* gap: 20px; */
 
     grid-template-areas:
         " aside header header"
@@ -307,17 +310,17 @@ footer {
 
 .principal {
     grid-area: principal;
-    height: 800px;
+    height: 1100px;
 }
 
 .lateral {
     grid-area: aside;
-    height: 900px;
+    height: 1200px;
 }
 
 .secundario {
     grid-area: secundario;
-    height: 1fr;
+    height: 100vh;
 }
 
 .footer {
@@ -347,6 +350,9 @@ footer {
 
     padding: 0 50px 0 50px;
     align-items: center;
+    font-family: 'helveticaBolder';
+    letter-spacing: 1px;
+    font-size: 14pt;
 }
 
 .links {
@@ -416,12 +422,12 @@ footer {
 
 
 .picture {
-    max-height: 800px;
+    max-height: 1100px;
 
 }
 
 .fotoyo {
-    max-height: 800px;
+    max-height: 1100px;
     ;
     object-fit: cover;
     filter: grayscale(100%);
@@ -462,12 +468,14 @@ footer {
 
     padding: 60px;
 
+    align-items: center;
+
 
 }
 
 .item1 {
     width: 30%;
-    height: 50%;
+
 
 
 
@@ -510,6 +518,8 @@ footer {
     align-items: center;
     background-color: white;
 
+    margin-top: 100px;
+
 }
 
 .titulo_trabajos {
@@ -537,23 +547,55 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    row-gap: 75px;
 
     padding: 70px;
+    z-index: 1;
+
+   
 }
 
 .minitrabajos {
     width: 300px;
     height: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    z-index: 1;   
+    transition: ease-out; 
+ 
+   
+    
 
 }
+
+.minitrabajos:hover{
+    transform:scale(1.3);
+    z-index: 2;
+    transition-duration: 1s;
+    border-radius: 10%;
+    
+}
+.imagenes:hover{
+
+    border-radius: 10%;
+    transition-duration: 1s;
+}
+
+
 
 .imagenes {
     width: 100%;
     height: 100%;
     object-fit: content;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    z-index: 3;
 }
+
+/* .minitrabajos:hover{
+
+    -webkit-transform:scale(1.3);transform:scale(1.3);z-index: 2;
+    transition: ease-out; transition-delay: 1s;
+} */
+
 
 
 /* Footer */
@@ -565,11 +607,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 20;
 
     background-color: black;
     width: 100%;
-    height: 300px;
+    height: 500px;
+    margin-top: 100px;
+    padding:40px;
 }
 
 
@@ -581,19 +624,25 @@ footer {
     font-size: 20pt;
     padding: 5px;
     border-radius: 5px;
+    
 }
 
 .contacto {
     color: white;
     font-family: 'montserratBold';
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .datos {
     background-color: black;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: space-around;
+    font-family: 'MontserratNormal';
+    letter-spacing: 1px;
+    font-size: 16pt;
+    color: white;
 }
 
 .links-datos {
@@ -601,4 +650,37 @@ footer {
     color: white;
 }
 
-.footer p{ color: white;}
+.footer p {
+    color: white;
+}
+
+/* Iconos */
+
+
+.iconos {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-content: center;
+}
+
+.redes {
+    background: white;
+ color: black;
+ font-size: 30px;
+ padding: 5px;
+ width: 60px;
+ height: 60px;
+ text-align: center;
+ /* Line-height en este caso es para centrar el icono */
+ line-height: 50px;
+ border-radius: 50%;
+}
+
+.derechos{
+
+    font-family: 'MontserratNormal';
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
