@@ -1,0 +1,187 @@
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+}
+
+
+/* Main */
+main {
+
+
+
+    background-image: url(../img/desktop/mcafee-total-protection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    height: 100vh;
+    background-position-y: top 100px;
+
+
+}
+
+
+
+/* Header */
+
+
+
+
+header {
+
+
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+
+
+}
+
+nav {
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.logo {
+    width: 20%
+}
+
+
+/* Section Proteccion */
+
+section.proteccion {
+
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: right;
+    color: white;
+    box-sizing: content-box;
+    height: 100vh;
+
+
+}
+
+.proteccion2 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 86.7vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+    box-sizing: content-box;
+
+
+}
+
+.proteccion2 h1,
+h3,
+h2,
+p,
+a {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.proteccion2 a {
+
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 30pt;
+}
+
+.titulo2 {
+    font-size: 16pt;
+
+}
+
+.precios {
+    font-size: 18pt;
+}
+
+.precio1 {
+    font-size: 35pt;
+}
+
+
+.precio2 {
+
+    text-decoration: line-through;
+}
+
+.boton {
+
+    background-color: red;
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+.mensaje {
+
+    font-size: 9pt;
+}
+
+
+
+
+
+
+/* Section Portatil */
+
+section.portatil {
+
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+section.portatil article {
+
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+
+}
+
+section.iconos1 {
+    display: flex;
+    margin-top: 100px;
+    justify-content:center;
+
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}

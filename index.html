@@ -91,6 +91,12 @@
     <!-- Java Script -->
     <script type="text/javascript">
     </script>
+<!-- JQery -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- Parallax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
 </head>
 
 <body>
@@ -98,17 +104,17 @@
 
     <div class="content">
 
-
+       
 
         <header class="header">
 
             <nav class="navegacion">
 
                 <a href="" class="links">HOME</a>
-                <a href="" class="links">SOBRE</a>
-                <a href="" class="links">TRABAJOS</a>
-                <a href="" class="links">BLOG</a>
-                <a href="" class="links">CONTACTO</a>
+                <a href="#sobre" class="links">SOBRE</a>
+                <a href="#trabajos" class="links">TRABAJOS</a>
+                <a href="newsletter.html" target="_blank" class="links">NEWSLETTER</a>
+                <a href="contacto.html" class="links">CONTACTO</a>
 
 
 
@@ -132,7 +138,7 @@
                 <h2>Mi nombre es </h2>
                 <h1>Juan Antonio Alarcón Salas</h1>
 
-                <a href="" class="botonyo">Yo soy un desarrollador</a>
+                <a href="" class="botonyo">Yo soy un desarrollador y pertenezco a la empresa DigitalEvolution S.A </a>
 
 
 
@@ -168,41 +174,52 @@
 
 
             <article class="item2">
+                <a name="sobre">
+                    <h5 class="quien">Quién soy yo</h5>
+                </a>
 
-                <h5 class="quien">Quien soy yo</h5>
+
 
                 <h3 class="hola">HOLA</h3>
 
-                <p>
+                <p class="redaccion">
 
 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ut optio animi, dolorum quis totam,
-                    voluptatum perferendis commodi hic inventore eius nulla facilis nobis iusto, ipsam quae magnam
-                    ratione consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit aut porro illo
-                    quidem hic, eligendi iusto alias voluptate ullam ipsa! Temporibus incidunt adipisci nesciunt dicta
-                    distinctio quae aspernatur, officia nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus hic, nemo placeat iure esse similique iste reprehenderit architecto corporis quisquam
-                    praesentium reiciendis, ea impedit in, quis vitae eligendi. Earum, inventore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi autem, laborum corrupti
-                    officiis in dolore dicta optio quis rem possimus accusantium ratione temporibus nam at quos quaerat?
-                    Quaerat, autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur
-                    illum repellendus asperiores, dolorem temporibus dicta earum non. Veritatis itaque ipsum
-                    exercitationem reprehenderit cum est tempore numquam ab officia pariatur.
+                    Me llamo Juan Antonio Alarcón Salas y soy un desarrollador web junior.
+
+                    Desde muy joven me empezó a gustar la informatica cuando tuve en mis manos un IBM PS/2 con un Intel
+                    486 DX 33Mhz.
+
+                    Desde aquel momento, siempre que podia estaba delante del ordenador, trasteando, averiguando y
+                    solucionando problemas, tanto en MS-DOS como en Windows 3.1.
+                    Fueron pasando los años y la informática me apasionaba muchisimo mas, pero llegada a cierta edad,
+                    tenia que trabajar para ganarme el pan y como no tenia estudios de informática, trabajé de cualquier
+                    cosa
+                    desde los 17 años.
+
+                    
+                    <p class="redaccion">
+
+                        Ahora pasados bastantes años pero nunca sin haber dejado la informática, mi curiosidad y el querer
+                        siempre reparar hardware o solucionar problemas software,decidí que ya era el momento de trabajar de lo que me gusta y
+                        sacarme unos estudios.
+                    
+                    
+
+                    </p>
+                
+
+
                 </p>
 
-                <p>
 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque repellendus recusandae totam culpa
-                    reprehenderit. Maxime, repudiandae. Dolor aspernatur autem qui quibusdam? Libero porro tenetur
-                    maiores aliquid impedit. Asperiores, unde natus.
-                    Rem eaque dicta non nihil praesentium, sit, id incidunt dolorem odit eius alias error repellendus
-                    illo velit. Dolor, illum harum laudantium sint, aspernatur quidem facere odit aut dolorem pariatur
-                    nihil.
-                    Modi corrupti adipisci sint deserunt quam eius libero cumque optio eaque praesentium et assumenda
-                    est architecto aspernatur facilis, ipsum voluptatibus quae beatae eum, corporis suscipit hic unde
-                    quis rem? Labore!
+                <h3 class="estudio">He realizado un curso de lenguaje de marcas y desarrollo web, de una duración de 250 Horas e  impartido por IBECON.</h3>
+                <h3 class="estudio"> Tengo un FP de Grado Medio en Sistemas Microinformáticos y redes (SMR) de una duración de 2000 Horas e impartido en el IES Emili Darder</h3>
+                <h3  class="estudio"> He realizado un proyecto llamado "LibeLola" como proyecto final para el grado. Está construido en HTML 5, CSS, PHP y JS, ademas de utilizar la base de datos
+                    MySql
+                </h3>
 
-                </p>
+                
             </article>
 
 
@@ -212,8 +229,8 @@
 
 
 
-        <section class="trabajos">
-
+        <section class="trabajos " >
+<a name="trabajos" ></a>
             <h2 class="titulo_trabajos">Mis Trabajos</h2>
             <h3 class="awesome">Proyectos Importantes</h3>
 
@@ -230,9 +247,9 @@
 </div> -->
 
             <article class="mistrabajos">
-                
 
-                <a href="" class="minitrabajos"> <img class="imagenes" src="img/desktop/liebelola.png" alt=""> </a>
+
+                <!-- <a href="" class="minitrabajos"> <img class="imagenes" src="img/desktop/liebelola.png" alt=""> </a>
                 <a href="" class="minitrabajos"> <img src="img/desktop/1.jpg"  alt="" class="imagenes">   </a>
                 <a href="" class="minitrabajos">   <img src="img/desktop/2.jpg"   alt="" class="imagenes">    </a>
                 <a href="" class="minitrabajos">   <img src="img/desktop/3.jpg" alt="" class="imagenes">   </a>
@@ -243,11 +260,103 @@
                 <a href="" class="minitrabajos">   <img src="img/desktop/4.jpg" alt="" class="imagenes">  </a>
                 <a href="" class="minitrabajos">   <img src="img/desktop/5.jpg" alt="" class="imagenes">  </a>
                 <a href="" class="minitrabajos">   <img src="img/desktop/6.jpg" alt="" class="imagenes">  </a>
-                <a href="" class="minitrabajos">   <img src="img/desktop/7.jpg" alt="" class="imagenes">  </a>
-           
+                <a href="" class="minitrabajos">   <img src="img/desktop/7.jpg" alt="" class="imagenes">  </a> -->
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=" https:\\liebelola.com" target="_blank"> <img class="img imagenes"
+                                    src="img/desktop/liebelola.png" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Liebe Lola</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/1.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hackers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/2.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Cuantico</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/3.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hardware</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/4.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hardware</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/5.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hardware</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/6.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Server</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/7.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Redes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/3.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hardware</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="container">
+                        <div class="div-img">
+                            <a href=""> <img class="img imagenes" src="img/desktop/5.jpg" title="Foto4" alt="Foto4">
+                            </a>
+                            <div class="text">Proyecto Hardware</div>
+                        </div>
+                    </div>
+                </div>
+               
 
 
-                
+
+
             </article>
 
 
@@ -258,41 +367,41 @@
 
 
             <article>
-                <a class="tocalo"  href="">Tocalo...</a> 
+                <a class="tocalo" href="">Tocalo...</a>
 
                 <h2 class="contacto">Contacto</h2>
-                
+
             </article>
 
 
 
-<section class="datos">
+            <section class="datos">
 
-    <a href="" class="links-datos">Alkonreal@gmail.com</a>
-    <a  class="links-datos">Telf: 646 39 90 76</a>
-    <a href="" class="links-datos"> Palma De Mallorca (España)</a>
-</section>
+                <a href="" class="links-datos">Alkonreal@gmail.com</a>
+                <a class="links-datos">Telf: 646 39 90 76</a>
+                <a href="" class="links-datos"> Palma De Mallorca (España)</a>
+            </section>
 
-<section class="iconos">
-<a href="">     <i class="fab redes   fa-facebook"></i>
-</a>
-<a href="">      <i class="fab redes fa-instagram"></i>
-</a>
-<a href="https://www.linkedin.com/in/jalarsa/"  target="_blank">      <i class="fab  redes fa-linkedin"></i>
-</a>
-<a href="">       <i class="fab  redes fa-twitter-square"></i>
-</a>
+            <section class="iconos">
+                <a href=""> <i class="fab redes   fa-facebook"></i>
+                </a>
+                <a href=""> <i class="fab redes fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jalarsa/" target="_blank"> <i class="fab  redes fa-linkedin"></i>
+                </a>
+                <a href=""> <i class="fab  redes fa-twitter-square"></i>
+                </a>
 
 
 
-</section>
+            </section>
 
-<p class="derechos"> 2020. All Rigths Reserved</p>
+            <p class="derechos"> &copy 2020. All Rigths Reserved</p>
 
 
         </footer>
 
-    </div>
+        
 
 
 
