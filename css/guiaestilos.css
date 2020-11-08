@@ -275,7 +275,7 @@ img {
 .content {
 
     /* Cuando este acabada la web, tambien debemos quitar este padding */
-    padding: 40px;
+    /* padding: 40px; */
     /*  */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -758,7 +758,7 @@ footer {
 
 .redes:hover{
 
-    color: blue; rotate: 90deg;
+    color: blue; rotate: 180deg;
 }
 
 .derechos{
