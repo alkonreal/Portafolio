@@ -21,7 +21,102 @@ puesto, tenlo en cuenta.  */
 and (orientation: portrait)
 /* FIN */
 
-{}
+    {
+
+    /*  General */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 56px
+    }
+
+    .navegacion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navegacion {
+        background-color: blueviolet;
+    }
+
+    /* Principal */
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 200px;
+
+    }
+
+    .yo {
+        width: 100%;
+        left: 50px;
+        bottom: 50px;
+    }
+
+    .yo h2 {
+        font-size: 16px;
+    }
+
+    .yo h1 {
+        font-size: 22px; margin-bottom: 20px;
+    }
+.botonyo{ display: none;}
+    .botonyo2 {
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        font-size: 12px;
+        text-size-adjust: auto ;
+        text-justify: distribute-all-lines;
+        background-color:none;
+    }
+
+/* Lateral */
+.lateral{ display:none;margin-bottom: 200px;}
+
+
+/*  Secundario */
+
+.secundario{display:flex; flex-direction: column; width:100%;
+    height:100vh; margin-top: 200px;
+}
+
+.parque{ width:100vw; height:100vh}
+
+.item1{ display:flex; flex-direction: column;widows: 100vw;; height:100vh}
+
+
+
+.item2{ display:flex; flex-direction: column; width:100%}
+
+.sobre{ margin:0px;padding:0px; font-size: 16px;}
+.quien{ margin:0px;padding:0px;font-size: 16px;}
+.hola{ margin:0px;padding:0px;font-size: 16px;}
+
+.redaccion{ width:100%;font-size: 16px;margin:0px;padding:0px;}
+.estudio{ width:100%;font-size: 16px;margin:0px;padding:0px;}
+
+
+
+
+
+}
 
 /* -------------------- */
 
@@ -35,13 +130,7 @@ and (orientation: portrait)
 
 /* ---------- HORIZONTAL ---------- */
 
-@media only screen and (min-device-width:1024px) and (orientation: landscape) {
-
-
-
-
-    
-}
+@media only screen and (min-device-width:1024px) and (orientation: landscape) {}
 
 /* -------------------- */
 
@@ -83,7 +172,8 @@ only screen and (-ms-pixel-ratio:2) and (min-width:800px) {
 /* ---------- VERTICAL ---------- */
 @media only screen and (-webkit-pixel-ratio:2),
 only screen and (-moz-pixel-ratio:2),
-only screen and (-ms-pixel-ratio:2) and (min-width:768px) and (orientation: portrait){
+only screen and (-ms-pixel-ratio:2) and (min-width:768px) and (orientation: portrait) {
+
     /* EJEMPLO */
     header {
         background-image: url(../img/smartphone/manoiphonemonitor@2x.jpg);
@@ -95,8 +185,8 @@ only screen and (-ms-pixel-ratio:2) and (min-width:768px) and (orientation: port
 /* @media only screen and (-webkit-pixel-ratio:2),
 only screen and (-moz-pixel-ratio:2),
 only screen and (-ms-pixel-ratio:2) and (min-width:1024px) and (orientation: landscape){ */
-    /* EJEMPLO */
-    /* header {
+/* EJEMPLO */
+/* header {
         background-image: url(../img/smartphone/manoiphonemonitor@2x.jpg);
     }
 } */
@@ -112,6 +202,7 @@ only screen and (-ms-pixel-ratio:2) and (min-width:1024px) and (orientation: lan
 @media only screen and (-webkit-pixel-ratio:2),
 only screen and (-moz-pixel-ratio:2),
 only screen and (-ms-pixel-ratio:2) and (min-width:320px) {
+
     /* EJEMPLO */
     header {
         background-image: url(../img/smartphone/manoiphonemonitor@2x.jpg);
@@ -127,6 +218,7 @@ only screen and (-moz-pixel-ratio:3),
 /* PARA MICROSOFT EXPLORER */
 
 only screen and (-ms-pixel-ratio:3) {
+
     /* EJEMPLO */
     header {
         background-image: url(../img/smartphone/manoiphonemonitor@3x.jpg)
