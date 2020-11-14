@@ -27,6 +27,10 @@ and (orientation: portrait)
     .content {
         display: flex;
         flex-direction: column;
+      
+      
+      height: 100%;
+       
     }
 
     * {
@@ -57,16 +61,30 @@ and (orientation: portrait)
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         width: 100%;
         height: 100%;
-        margin-bottom: 200px;
+        background-color: rgba(232, 232, 232, 1);
+        
 
     }
 
     .yo {
-        width: 100%;
+        width: 75%;
         left: 50px;
-        bottom: 50px;
+        bottom: 10px;
+     
+    background: rgba(64, 64, 64, 0.4);
+        height: 190px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+     
+
     }
 
     .yo h2 {
@@ -74,47 +92,380 @@ and (orientation: portrait)
     }
 
     .yo h1 {
-        font-size: 22px; margin-bottom: 20px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        
     }
-.botonyo{ display: none;}
+
+    .botonyo {
+        display: none;
+        
+    }
+
     .botonyo2 {
-        width: 100%;
-        height: 50px;
-        padding: 0px;
-        font-size: 12px;
-        text-size-adjust: auto ;
+        width: 70%;
+        height: 20px;
+padding:20px;
+        font-size: 14px;
+        text-size-adjust: auto;
         text-justify: distribute-all-lines;
-        background-color:none;
+        background-color: none;
+
+        background-color: yellow;
+        color: black;
+        font-family: "MontserratRegular";
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5px; box-sizing: content-box;
+        text-align: center
+
+       
+        ;
     }
 
-/* Lateral */
-.lateral{ display:none;margin-bottom: 200px;}
+    /* Lateral */
+    .lateral {
+        display: none;
+        margin-bottom: 200px;
+    }
 
 
-/*  Secundario */
+    /*  Secundario */
 
-.secundario{display:flex; flex-direction: column; width:100%;
-    height:100vh; margin-top: 200px;
+    .secundario {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        
+        background-color: rgba(232, 232, 232, 1);
+
+
+  
+    
+       
+    }
+
+    .parque {
+        width: 75%;
+        height: 75%;
+        -webkit-box-shadow: -30px -30px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -30px -30px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -30px -30px 0px 0px rgba(0, 0, 0, 0.75);
+        transition: width 2s, height 2s;
+        
+        
+    }
+
+    .parque:hover{
+
+        width: 100vw;
+        height: 100%;
+
+
+    }
+
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        padding-top: 100px ;
+
+        align-items:center;
+        
+        height: 100%;
+
+        
+        
+    
+    }
+
+
+
+    .item2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .sobre {
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .quien {
+        margin-top: 20px;
+        padding: 0px;
+        font-size: 16px;
+        font-family: "MontserratBold";
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+
+    .hola {
+        margin: 0px;
+        padding: 0px;
+       
+        font-family: "MontserratRegular";
+        font-size: 30pt;
+        text-decoration: underline yellow 10px solid  ;
+        margin-bottom: 30px;
+    }
+
+    .redaccion {
+        width: 100%;
+      
+        margin: 0px;
+        padding: 10px;
+        font-family: 'montserratNormal'; font-size: 14pt;
+        
+        text-align: justify;
+    }
+
+
+    .read1{ margin-bottom: 20px;}
+    .estudio {
+        width: 100%;
+        
+        margin: 0px;
+        padding: 10px;
+        font-family: 'montserratBold'; font-size: 14pt;
+        margin-bottom: 10px;
+    }
+
+    .estudio::before{ content:"*"}
+
+/* Trabajos */
+
+.trabajos{
+
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+padding-top: 50px;
+background-color: rgba(232, 232, 232, 1);
+
 }
 
-.parque{ width:100vw; height:100vh}
 
-.item1{ display:flex; flex-direction: column;widows: 100vw;; height:100vh}
+.titulo_trabajos {
+    font-family: "MontserratBold";
+    font-size: 30pt;
+    padding: 0px;
+    border-bottom: 8px solid yellow;
 
-
-
-.item2{ display:flex; flex-direction: column; width:100%}
-
-.sobre{ margin:0px;padding:0px; font-size: 16px;}
-.quien{ margin:0px;padding:0px;font-size: 16px;}
-.hola{ margin:0px;padding:0px;font-size: 16px;}
-
-.redaccion{ width:100%;font-size: 16px;margin:0px;padding:0px;}
-.estudio{ width:100%;font-size: 16px;margin:0px;padding:0px;}
+}
 
 
 
 
+.awesome {
+    font-family: 'montserratRegular';
+    font-size: 20pt;
+}
+
+/* .nav2{
+
+        display:flex;
+    } */
+
+.mistrabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    row-gap: 100px;
+    justify-content: center;
+    align-items: center;
+
+   ;
+    z-index: 1;
+
+    margin-top: 50px;
+    
+
+   
+}
+
+.minitrabajos {
+    width: 300px;
+    height: 300px;
+    /* background-color: aqua; */
+    /* z-index: 1;   
+    transition: ease-out;  */
+
+ 
+   
+    
+
+}
+.div-img:hover .img {
+filter: none;
+    -webkit-transition: all 500ms ease-in-out;
+
+  }
+
+
+.text{ text-align: center;
+    font-family: 'montserratRegular';
+
+    
+}
+
+.div-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-img .img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    
+    -webkit-transition: all 500ms ease-in-out;
+
+
+/* .minitrabajos:hover{
+    transform:scale(1.3);
+    z-index: 2;
+    transition-duration: 1s;
+    border-radius: 10%;
+    
+}
+.imagenes:hover{
+
+    border-radius: 10%;
+    transition-duration: 1s;
+} */
+
+
+/* Prueba imagen del lobo */
+
+
+
+
+  
+
+  }
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    z-index: 3;
+}
+
+
+ /* Footer */
+
+ .footer {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    padding:40px;
+}
+
+
+.tocalo {
+
+    background-color: yellow;
+    color: black;
+    font-family: 'montserratRegular';
+    font-size: 14pt;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.contacto {
+    color: white;
+    font-family: 'montserratBold';
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 20pt;
+}
+
+.datos {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'MontserratNormal';
+    letter-spacing: 1px;
+    font-size: 16pt;
+    color: white;
+}
+
+.links-datos {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Iconos */
+
+
+.iconos {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-content: center;
+}
+
+.redes {
+    background: white;
+ color: black;
+ font-size: 30px;
+ padding: 5px;
+ width: 60px;
+ height: 60px;
+ text-align: center;
+ /* Line-height en este caso es para centrar el icono */
+ line-height: 50px;
+ border-radius: 50%;
+ transition: all 500ms ease-in-out;
+
+}
+
+.redes:hover{
+
+    color: blue; rotate: 180deg;
+}
+
+.derechos{
+
+    font-family: 'MontserratNormal';
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
+
+    
+}
 
 }
 
@@ -130,7 +481,11 @@ and (orientation: portrait)
 
 /* ---------- HORIZONTAL ---------- */
 
-@media only screen and (min-device-width:1024px) and (orientation: landscape) {}
+@media only screen and (min-device-width:1024px) and (orientation: landscape) {
+    .lateral {
+        /* background-color: red; */
+    }
+}
 
 /* -------------------- */
 
@@ -138,7 +493,332 @@ and (orientation: portrait)
 
 /* -------------------- */
 
-@media only screen and (min-width:1366px) {  .botonyo2{display:none}}
+@media only screen and (min-width:1366px) {
+    .botonyo2 {
+        display: none
+    }
+
+
+
+
+    .yo a {
+
+        background-color: yellow;
+        color: black;
+        font-family: "MontserratRegular";
+        text-transform: uppercase;
+        padding: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        
+    
+    }
+
+
+    /* Secundario */
+
+    .secundario {
+
+
+        background-color: rgba(232, 232, 232, 1);
+        display: flex;
+        justify-content: space-around;
+    
+        width: 100%;
+    
+        padding: 60px;
+    
+        align-items: center;
+    
+        
+    
+    
+    }
+    
+    .item1 {
+        width: 30%;
+    
+    
+    
+    
+    
+    }
+    
+    
+    .item2 {
+    
+        width: 50%;
+    }
+    
+    .parque {
+    
+        object-fit: contain;
+        -webkit-box-shadow: -50px -55px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -50px -55px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -50px -55px 0px 0px rgba(0, 0, 0, 0.75);
+    
+    }
+    
+    .quien {
+        font-family: "MontserratBold";
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    .hola {
+        font-family: "MontserratRegular";
+        font-size: 30pt;
+        text-decoration: underline yellow 10px solid  ;
+        margin-bottom: 50px;
+    
+    }
+    
+    .redaccion{
+    
+        font-family: 'montserratNormal'; font-size: 15pt;
+    }
+    
+    .estudio{ font-family: 'montserratBold'; font-size: 16pt;}
+    .estudio::before{ content:"*"}
+
+
+    /* Trrabajos */
+
+    .trabajos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    
+        margin-top: 300px;
+    
+    }
+    
+    .titulo_trabajos {
+        font-family: "MontserratBold";
+        font-size: 40pt;
+        padding: 0px;
+        border-bottom: 8px solid yellow;
+    
+    }
+    
+    
+    
+    
+    .awesome {
+        font-family: 'montserratRegular';
+        font-size: 20pt;
+    }
+    
+    /* .nav2{
+    
+            display:flex;
+        } */
+    
+    .mistrabajos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        row-gap: 400px;
+        justify-content: center;
+    
+        padding: 70px;
+        z-index: 1;
+    
+       
+    }
+    
+    .minitrabajos {
+        width: 300px;
+        height: 300px;
+        /* background-color: aqua; */
+        /* z-index: 1;   
+        transition: ease-out;  */
+     
+       
+        
+    
+    }
+    
+    /* .minitrabajos:hover{
+        transform:scale(1.3);
+        z-index: 2;
+        transition-duration: 1s;
+        border-radius: 10%;
+        
+    }
+    .imagenes:hover{
+    
+        border-radius: 10%;
+        transition-duration: 1s;
+    } */
+    
+    
+    /* Prueba imagen del lobo */
+    
+    
+    
+    
+      .relative{ position: relative;width: 300px;}
+      .container {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 20px;
+      }
+      .div-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .div-img .img {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+        transform: scale(1);
+        -webkit-transition: all 500ms ease-in-out;
+        
+       
+      }
+      .div-img .text {
+        font-family: 'montserratBold';
+        padding-top: 5px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        transform: translate(0px);
+        -webkit-transition: all 500ms ease-in-out;
+        font-size: 20pt;
+       
+        opacity: 0;
+        transition: transfom opacity 1.5s;
+      }
+      .div-img:hover .img {
+        transform: scale(0.8); filter: none;
+    
+      }
+      .div-img:hover .text {
+        transform: translate(0px, -20px);
+        opacity: 1;
+      }
+    
+    
+    
+    .imagenes {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+        z-index: 3;
+    }
+
+    /* Footer */
+
+.footer {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    margin-top: 500px;
+    padding:40px;
+}
+
+
+.tocalo {
+
+    background-color: yellow;
+    color: black;
+    font-family: 'montserratRegular';
+    font-size: 20pt;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.contacto {
+    color: white;
+    font-family: 'montserratBold';
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.datos {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'MontserratNormal';
+    letter-spacing: 1px;
+    font-size: 16pt;
+    color: white;
+}
+
+.links-datos {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Iconos */
+
+
+.iconos {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    align-content: center;
+}
+
+.redes {
+    background: white;
+ color: black;
+ font-size: 30px;
+ padding: 5px;
+ width: 60px;
+ height: 60px;
+ text-align: center;
+ /* Line-height en este caso es para centrar el icono */
+ line-height: 50px;
+ border-radius: 50%;
+ transition: all 500ms ease-in-out;
+
+}
+
+.redes:hover{
+
+    color: blue; rotate: 180deg;
+}
+
+.derechos{
+
+    font-family: 'MontserratNormal';
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
+
+    
+}
 
 
 
@@ -181,15 +861,22 @@ only screen and (-ms-pixel-ratio:2) and (min-width:768px) and (orientation: port
 }
 
 /* ---------- HORIZONTAL ---------- */
-/* PARA IMAGENES EN TABLET, ME DICE QUE NO IMPORTA EL MODO HORIZONTAL */
-/* @media only screen and (-webkit-pixel-ratio:2),
+/* PARA IMAGENES EN TABLET, ME DICE QUE NO IMPORTA EL MODO HORIZONTAL  */
+@media only screen and (-webkit-pixel-ratio:2),
 only screen and (-moz-pixel-ratio:2),
-only screen and (-ms-pixel-ratio:2) and (min-width:1024px) and (orientation: landscape){ */
-/* EJEMPLO */
-/* header {
+only screen and (-ms-pixel-ratio:2) and (min-width:1024px) and (orientation: landscape) {
+    /* Ejemplo */
+
+
+
+    header {
         background-image: url(../img/smartphone/manoiphonemonitor@2x.jpg);
+
+
+
+
     }
-} */
+}
 
 
 
