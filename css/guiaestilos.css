@@ -364,13 +364,7 @@ footer {
 }
 
 
-/* .links:hover { text-decoration: underline  yellow  ; } */
-.links:hover {
-    border-bottom: 3px solid yellow;
-    text-decoration: none;
-    color: white;
-    transform: scale(1.8);
-}
+
 
 /* Div content */
 .content {

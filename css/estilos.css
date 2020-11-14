@@ -43,7 +43,10 @@ and (orientation: portrait)
     .header {
         display: flex;
         flex-direction: column;
-        height: 56px
+        height: 56px;
+
+        
+       
     }
 
     .navegacion {
@@ -51,9 +54,7 @@ and (orientation: portrait)
         flex-wrap: wrap;
     }
 
-    .navegacion {
-        background-color: blueviolet;
-    }
+   
 
     /* Principal */
 
@@ -465,7 +466,7 @@ filter: none;
 }
 
     
-}
+/* } */
 
 }
 
@@ -494,6 +495,18 @@ filter: none;
 /* -------------------- */
 
 @media only screen and (min-width:1366px) {
+
+
+/* .links:hover { text-decoration: underline  yellow  ; } */
+.links:hover {
+    border-bottom: 3px solid yellow;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.8);
+}
+
+
+
     .botonyo2 {
         display: none
     }
