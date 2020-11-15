@@ -44,17 +44,76 @@ and (orientation: portrait)
         display: flex;
         flex-direction: column;
         height: 56px;
+        z-index: 1;;
 
         
        
     }
 
     .navegacion {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
     }
 
+
+/* Menú Hamburguesa */
+
+.respmenu a { 
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 150px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+
+
+   .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0px;
+  top: 0;
+  width: 48px;
+  height: 48px; 
    
+}
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+ 
+.respmenu input[type="checkbox"] {
+  opacity: 0; 
+}
+ 
+.respmenu {
+  color: white;
+  position: relative; 
+  background: #123456;
+  min-height: 48px;
+}
+ 
+.respmenu nav {
+  display: none;
+}
+ 
+.respmenu input:checked ~ nav {
+  display: block;
+}
+ 
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
 
     /* Principal */
 
@@ -504,6 +563,8 @@ filter: none;
     color: white;
     transform: scale(1.8);
 }
+
+.respmenu{ display: none;}
 
 
 
